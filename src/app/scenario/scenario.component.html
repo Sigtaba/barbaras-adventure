@@ -1,3 +1,24 @@
-<p>
-  scenario works!
-</p>
+<div *ngIf="scenarioToDisplay">
+  <h2>{{scenarioToDisplay.name}}</h2>
+  <img src="{{scenarioToDisplay.img}}" style="width: 60%">
+  <p>{{scenarioToDisplay.story}}</p>
+  <p>{{scenarioToDisplay.question}}</p>
+  <form #formData="ngForm" (ngSubmit)="checkResult(formData); false">
+    <label for="answer">
+      <input type="radio" name="answer" value="{{scenarioToDisplay.answerOne.value}}" ngModel>
+      {{scenarioToDisplay.answerOne.name}}
+    </label>
+    <label for="answer">
+      <input type="radio" name="answer" value="{{scenarioToDisplay.answerTwo.value}}" ngModel>
+      {{scenarioToDisplay.answerTwo.name}}
+    </label>
+    <label for="answer">
+      <input type="radio" name="answer" value="{{scenarioToDisplay.answerThree.value}}" ngModel>
+      {{scenarioToDisplay.answerThree.name}}
+    </label>
+    <br>
+    <button type="submit">Test Your Knowledge</button>
+  </form>
+
+  <div *ngIf="wrongAnswer">Incorrect, try your luck again!</div>
+</div>

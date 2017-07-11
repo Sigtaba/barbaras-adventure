@@ -24,6 +24,7 @@ export class AppComponent {
                    new Answer('Shiba Inu', 0),
                    new Answer('Great Dane', 5),
                    '/src/assets/img/Unknown Solider Egypt.jpg',
+                   0,
                    1));
     this.GameService.scenarios.push(
       new Scenario('Pink Triangle - Denise',
@@ -33,6 +34,7 @@ export class AppComponent {
                    new Answer('Children\'s music', 5),
                    new Answer('South African Rage Rap', 0),
                    '/src/assets/img/pink triangle spain.jpg',
+                   5,
                    2));
     this.GameService.scenarios.push(
       new Scenario('Dhaka - Asif',
@@ -42,6 +44,7 @@ export class AppComponent {
                     new Answer('Salman', 5),
                     new Answer('Dev', 0),
                     '/src/assets/img/dhaka bangladesh.jpg',
+                    10,
                     3));
     this.GameService.scenarios.push(
       new Scenario('Ryugyong Hotel - Xi',
@@ -50,7 +53,8 @@ export class AppComponent {
                     new Answer('Barbara', -20),
                     new Answer('Kim Jong Il', 20),
                     new Answer('Il', -20),
-                    '/src/assets/img/dhaka bangladesh.jpg',
+                    '/src/assets/img/ryugyong hotel north korea.jpg',
+                    15,
                     4));
     this.GameService.scenarios.push(
       new Scenario('The Arch - Ronald',
@@ -60,6 +64,7 @@ export class AppComponent {
                     new Answer('Lumber Mill', 0),
                     new Answer('Veterinarian', 5),
                     '/src/assets/img/stl arch.jpg',
+                    15,
                     5));
     this.GameService.scenarios.push(
       new Scenario('Luxor - Leonard',
@@ -68,7 +73,8 @@ export class AppComponent {
                     new Answer('Send in the Clowns', 5),
                     new Answer('Hit Me Baby One More Time', -5),
                     new Answer('Danke Schoen', 0),
-                    '/src/assets/img/luxor las vegas.jpg',
+                    '/src/assets/img/luxor las vegas.tif',
+                    20,
                     6));
     this.GameService.scenarios.push(
       new Scenario('Chichen Itza - Lucinda',
@@ -78,6 +84,7 @@ export class AppComponent {
                     new Answer('⟁', 0),
                     new Answer('▶', 5),
                     '/src/assets/img/Mayan Chichen Itza.jpg',
+                    25,
                     7));
     this.GameService.scenarios.push(
       new Scenario('Louvre - Penelope',
@@ -87,6 +94,7 @@ export class AppComponent {
                     new Answer('Une cigogne l\'a laissé tomber du ciel', 0),
                     new Answer('Vieille rampante', 5),
                     '/src/assets/img/louvre paris.jpg',
+                    30,
                     8));
     this.GameService.scenarios.push(
       new Scenario('Giza - Winston',
@@ -95,7 +103,8 @@ export class AppComponent {
                     new Answer('@(*O*)@', -5),
                     new Answer('><((((\'>', 0),
                     new Answer('(")(=^.^=)(")', 5),
-                    '/src/assets/img/The-Giz-Plateau.jpg',
+                    '/src/assets/img/The-Giza-Plateau.jpg',
+                    35,
                     9));
   }
 }

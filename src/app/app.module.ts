@@ -13,6 +13,7 @@ import { GameService } from './game.service';
 import { WinScreenComponent } from './win-screen/win-screen.component';
 import { LoseScreenComponent } from './lose-screen/lose-screen.component';
 import { ScenarioComponent } from './scenario/scenario.component';
+import { AirportComponent } from './airport/airport.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ScenarioComponent } from './scenario/scenario.component';
     PlayerScoreComponent,
     WinScreenComponent,
     LoseScreenComponent,
-    ScenarioComponent
+    ScenarioComponent,
+    AirportComponent
   ],
   imports: [
     BrowserModule,

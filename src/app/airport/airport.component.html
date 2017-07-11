@@ -1,0 +1,3 @@
+<ul>
+  <li *ngFor="let scenario of GameService.scenarios"><span *ngIf="checkQualification(scenario)" (click)="navigate(scenario.id)">{{scenario.name}}</span></li>
+</ul>

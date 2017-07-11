@@ -4,6 +4,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { EnterPlayerInfoComponent } from './enter-player-info/enter-player-info.component';
 import { WinScreenComponent } from './win-screen/win-screen.component';
 import { LoseScreenComponent } from './lose-screen/lose-screen.component';
+import { ScenarioComponent } from './scenario/scenario.component';
+import { AirportComponent } from './airport/airport.component';
 
 const appRoutes: Routes = [
   {
@@ -16,7 +18,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'scenario/:id',
-    component: WelcomeComponent
+    component: ScenarioComponent
   },
   {
     path: 'win-screen',
@@ -25,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'lose-screen',
     component: LoseScreenComponent
+  },
+  {
+    path: 'airport',
+    component: AirportComponent
   }
 ];
 

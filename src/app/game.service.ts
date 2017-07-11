@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Player } from './player.model';
 import { Scenario } from './scenario.model';
-import { Answer } from './answer.model';
 
 @Injectable()
 export class GameService {
@@ -12,6 +11,13 @@ export class GameService {
 
   constructor() { }
 
+  getScenarioById(scenarioId: number){
+    for (var i = 0; i < this.scenarios.length; i++) {
+      if (this.scenarios[i].id === scenarioId) {
+        return this.scenarios[i];
+      }
+    }
+  }
 
   createPlayer(player) {
     this.player = player;
