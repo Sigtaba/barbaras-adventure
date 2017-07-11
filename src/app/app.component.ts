@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Player } from './player.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  player: Player = null;
 }
