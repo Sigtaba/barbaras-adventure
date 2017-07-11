@@ -10,13 +10,19 @@ import { EnterPlayerInfoComponent } from './enter-player-info/enter-player-info.
 import { PlayerScoreComponent } from './player-score/player-score.component';
 
 import { GameService } from './game.service';
+import { WinScreenComponent } from './win-screen/win-screen.component';
+import { LoseScreenComponent } from './lose-screen/lose-screen.component';
+import { ScenarioComponent } from './scenario/scenario.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     EnterPlayerInfoComponent,
-    PlayerScoreComponent
+    PlayerScoreComponent,
+    WinScreenComponent,
+    LoseScreenComponent,
+    ScenarioComponent
   ],
   imports: [
     BrowserModule,
