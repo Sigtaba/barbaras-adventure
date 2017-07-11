@@ -6,5 +6,6 @@ export class Scenario {
               public answerOne: Answer,
               public answerTwo: Answer,
               public answerThree: Answer,
+              public img: string,
               public id: number) {}
 }

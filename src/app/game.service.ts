@@ -13,7 +13,7 @@ export class GameService {
   constructor() { }
 
 
-  test(player) {
+  createPlayer(player) {
     this.player = player;
   }
 }

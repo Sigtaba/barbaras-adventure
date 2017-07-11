@@ -22,8 +22,9 @@ notATriangle: boolean = false;
     console.log(testValue);
     if (testValue != false) {
       var newPlayer = new Player(form.value.name, testValue);
-      this.GameService.test(newPlayer);
+      this.GameService.createPlayer(newPlayer);
       this.router.navigate(['scenario', 1])
+      console.log(this.GameService.scenarios);
     }
   }
 
